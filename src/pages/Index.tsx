@@ -86,12 +86,13 @@ const Index = () => {
                   <TypeAnimation
                     sequence={[
                       'Infinity Booking Tool',
-                      2000,
+                      3000,
                       '',
-                      500,
+                      1000,
                     ]}
                     wrapper="span"
-                    speed={30}
+                    speed={50}
+                    deletionSpeed={70}
                     repeat={Infinity}
                     cursor={true}
                   />
