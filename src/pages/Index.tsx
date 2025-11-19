@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Calendar, CreditCard, Plus, MessageCircle, Star, Layout, Clock, Users, Smartphone, Mail, ArrowRight, Sparkles } from "lucide-react";
 
 const Index = () => {
@@ -392,6 +393,107 @@ const Index = () => {
                   View Demo
                 </Button>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 px-4 relative" id="faq">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/5 to-transparent pointer-events-none" />
+          
+          <div className="container mx-auto max-w-4xl relative z-10">
+            <div className="text-center mb-12 fade-in">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Everything you need to know about Infinity Booking System
+              </p>
+            </div>
+
+            <div className="fade-in glass rounded-xl p-6 md:p-8 border border-white/10">
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                <AccordionItem value="item-1" className="border-b border-white/10">
+                  <AccordionTrigger className="text-left hover:text-purple-400 transition-colors">
+                    What is the Infinity Booking System?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    The Infinity Booking System is an all-in-one solution for managing appointments, reservations, and customer bookings. It is designed for businesses of all sizes and helps streamline scheduling with ease.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2" className="border-b border-white/10">
+                  <AccordionTrigger className="text-left hover:text-purple-400 transition-colors">
+                    How much does the Infinity Booking System cost?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    You can get the complete Infinity Booking System for a one-time fee of $199. There are no monthly or hidden charges. Pay once and enjoy full access to all features.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3" className="border-b border-white/10">
+                  <AccordionTrigger className="text-left hover:text-purple-400 transition-colors">
+                    What features are included in the Infinity Booking System?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    <p className="mb-3">The system includes:</p>
+                    <ul className="space-y-2 list-disc list-inside">
+                      <li>Unlimited appointments and bookings</li>
+                      <li>Automated reminders for customers</li>
+                      <li>Customizable booking forms</li>
+                      <li>Multi-platform compatibility (desktop, mobile, tablet)</li>
+                      <li>Secure payment integration</li>
+                      <li>Easy-to-use admin dashboard</li>
+                    </ul>
+                    <p className="mt-3">All of these come with a single one-time payment of $199.</p>
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="border-b border-white/10">
+                  <AccordionTrigger className="text-left hover:text-purple-400 transition-colors">
+                    Is there a subscription fee?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    No. The Infinity Booking System is available for a one-time payment of $199. You will not be charged monthly or annually.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5" className="border-b border-white/10">
+                  <AccordionTrigger className="text-left hover:text-purple-400 transition-colors">
+                    How do I pay for the Infinity Booking System?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Payment is easy and secure. Simply pay the one-time fee of $199 using your preferred payment method (credit card, PayPal, or other supported options), and you'll receive full access to the system.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-6" className="border-b border-white/10">
+                  <AccordionTrigger className="text-left hover:text-purple-400 transition-colors">
+                    Is customer support included?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Yes! All users who pay the one-time fee of $199 get access to our support team for setup guidance, troubleshooting, and assistance whenever needed.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-7" className="border-b border-white/10">
+                  <AccordionTrigger className="text-left hover:text-purple-400 transition-colors">
+                    Can I upgrade or customize the system later?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Absolutely. The Infinity Booking System is fully customizable. Once you've purchased the one-time license, you can request additional customizations or features as your business grows.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-8" className="border-none">
+                  <AccordionTrigger className="text-left hover:text-purple-400 transition-colors">
+                    Why should I choose Infinity Booking System over other booking platforms?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Unlike subscription-based booking platforms, the Infinity Booking System offers full access for a single one-time payment of $199. No recurring fees, full ownership, and unlimited bookings make it the most cost-effective solution for businesses.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </section>
