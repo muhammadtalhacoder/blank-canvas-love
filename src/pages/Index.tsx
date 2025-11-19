@@ -87,10 +87,13 @@ const Index = () => {
                     sequence={[
                       'Infinity Booking Tool',
                       2000,
+                      '',
+                      500,
                     ]}
                     wrapper="span"
                     speed={30}
                     repeat={Infinity}
+                    cursor={true}
                   />
                 </span>
               </h1>
@@ -124,7 +127,7 @@ const Index = () => {
                   size="lg" 
                   variant="outline"
                   asChild
-                  className="group text-base sm:text-lg px-4 sm:px-8 py-5 sm:py-6 glass border-2 border-white/20 hover:border-white/40 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover-lift relative overflow-hidden"
+                  className="group text-base sm:text-lg px-6 sm:px-8 py-6 sm:py-6 glass border-2 border-white/20 hover:border-white/40 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover-lift relative overflow-hidden"
                 >
                   <a href="mailto:infinityforge.digital@gmail.com?subject=Get Started - Infinity Booking System for $199">
                     <span className="relative z-10 flex flex-col sm:flex-row items-center gap-2">
