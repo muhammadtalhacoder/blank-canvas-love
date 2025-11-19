@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Calendar, CreditCard, Plus, MessageCircle, Star, Layout, Clock, Users, Smartphone, Mail, ArrowRight, Sparkles } from "lucide-react";
+import { TypeAnimation } from 'react-type-animation';
 
 const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -82,7 +83,15 @@ const Index = () => {
               
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
                 <span className="text-white drop-shadow-[0_0_30px_rgba(168,85,247,0.5)]">
-                  Infinity Booking Tool
+                  <TypeAnimation
+                    sequence={[
+                      'Infinity Booking Tool',
+                      2000,
+                    ]}
+                    wrapper="span"
+                    speed={30}
+                    repeat={Infinity}
+                  />
                 </span>
               </h1>
               
@@ -114,13 +123,16 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
+                  asChild
                   className="group text-base sm:text-lg px-4 sm:px-8 py-5 sm:py-6 glass border-2 border-white/20 hover:border-white/40 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover-lift relative overflow-hidden"
                 >
-                  <span className="relative z-10 flex flex-col sm:flex-row items-center gap-2">
-                    <span>Get Started for $199 Only</span>
-                    <span className="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 whitespace-nowrap">Limited Time</span>
-                  </span>
-                  <div className="absolute inset-0 shimmer" />
+                  <a href="mailto:infinityforge.digital@gmail.com?subject=Get Started - Infinity Booking System for $199">
+                    <span className="relative z-10 flex flex-col sm:flex-row items-center gap-2">
+                      <span>Get Started for $199 Only</span>
+                      <span className="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 whitespace-nowrap">Limited Time</span>
+                    </span>
+                    <div className="absolute inset-0 shimmer" />
+                  </a>
                 </Button>
               </div>
             </div>
@@ -252,8 +264,10 @@ const Index = () => {
                     Includes full booking system setup, admin panel, service categories, calendar, forms, and payment integration.
                   </p>
 
-                  <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 group-hover:scale-105 transition-transform text-sm sm:text-base py-5">
-                    Get Started
+                  <Button asChild className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 group-hover:scale-105 transition-transform text-sm sm:text-base py-5">
+                    <a href="mailto:infinityforge.digital@gmail.com?subject=Get Started - Standard Setup for $199">
+                      Get Started
+                    </a>
                   </Button>
                 </div>
               </Card>
@@ -290,9 +304,11 @@ const Index = () => {
                     </li>
                   </ul>
 
-                  <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 group-hover:scale-105 transition-transform relative overflow-hidden text-sm sm:text-base py-5">
-                    <span className="relative z-10">Contact Us</span>
-                    <div className="absolute inset-0 shimmer" />
+                  <Button asChild className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 group-hover:scale-105 transition-transform relative overflow-hidden text-sm sm:text-base py-5">
+                    <a href="mailto:infinityforge.digital@gmail.com?subject=Custom Plan Inquiry - Infinity Booking System">
+                      <span className="relative z-10">Contact Us</span>
+                      <div className="absolute inset-0 shimmer" />
+                    </a>
                   </Button>
                 </div>
               </Card>
